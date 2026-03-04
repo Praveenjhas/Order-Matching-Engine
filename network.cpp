@@ -32,7 +32,6 @@ void NetworkServer::setup_server() {
 
     bind(server_fd, (sockaddr*)&addr, sizeof(addr));
     listen(server_fd, SOMAXCONN);
-
     set_non_blocking(server_fd);
 
     epoll_fd = epoll_create1(0);

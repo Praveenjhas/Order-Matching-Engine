@@ -1,7 +1,6 @@
 #pragma once
 #include "spsc_queue.h"
 #include "order.h"
-
 class NetworkServer {
 public:
     NetworkServer(int port, SPSCQueue<Order, 1024>& queue);
